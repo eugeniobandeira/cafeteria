@@ -41,7 +41,7 @@
                 <a class="nav-link" href="#">Sobre</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
+                <a class="nav-link" href="#contato">Contato</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
@@ -143,7 +143,7 @@
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="card border-0 mx-auto btn" style="width: 18rem;">
+          <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-3" style="width: 18rem;">
             <img src="./assets/produtos-vitaminas.png" class="card-img-top" alt="Vitaminas variadas">
             <div class="card-body">
               <h3 class="card-text text-center fw-bold text-nowrap">Smoothies e Vitaminas</h3>
@@ -152,7 +152,8 @@
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="card border-0 mx-auto btn" style="width: 18rem;">
+          <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-4"
+            style=" width: 18rem;">
             <img src="./assets/produtos-paes.png" class="card-img-top" alt="Pães variados">
             <div class="card-body">
               <h3 class="card-text text-center fw-bold">Pães e Focaccias</h3>
@@ -161,7 +162,7 @@
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="card border-0 mx-auto btn" style="width: 18rem;">
+          <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-5" style="width: 18rem;">
             <img src="./assets/produtos-doces.png" class="card-img-top" alt="Bolo de morango">
             <div class="card-body">
               <h3 class="card-text text-center fw-bold">Doces</h3>
@@ -170,7 +171,7 @@
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="card border-0 mx-auto btn" style="width: 18rem;">
+          <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-6" style="width: 18rem;">
             <img src="./assets/produtos-salgados.png" class="card-img-top" alt="Torta salgada">
             <div class="card-body">
               <h3 class="card-text text-center fw-bold">Salgados</h3>
@@ -183,10 +184,46 @@
 
     <section class="banners banner-3">
     </section>
+
+    <section class="py-4 container">
+      <div class="border-2 rounded p-3">
+        <h3 class="fw-bold p-3">Entre em contato!</h3>
+        <form id="contato">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingNome" placeholder="Nome">
+            <label for="floatingNome">Nome</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingEmail" placeholder="Email">
+            <label for="floatingEmail">Email</label>
+          </div>
+
+          <div class=" form-floating mb-3">
+            <input type="number" class="form-control" id="floatingTel" placeholder="Telefone">
+            <label for="floatingTel">Telefone</label>
+          </div>
+          <select class="form-select mb-3" aria-label="Default select example">
+            <option selected>Preferência de contato</option>
+            <option value="1">WhatsApp</option>
+            <option value="2">Email</option>
+            <option value="3">Ligação</option>
+          </select>
+          <label for="nivel-satisfacao" class="form-label">Nível de Satisfação</label>
+          <input type="range" class="form-range" id="nivel-satisfacao">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Deseja receber novidades por email?
+            </label>
+          </div>
+          <button type="button" class="btn botao-padrao w-100 fw-bold mt-3 py-3 ">Enviar</button>
+        </form>
+      </div>
+    </section>
   </main>
 
   <!-- Canvas 1 -->
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-1" aria-labelledby="offcanvasRightLabel">
+  <div class=" offcanvas offcanvas-end" tabindex="-1" id="canvas-1" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="offcanvasRightLabel">Café & Bistrô</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -202,7 +239,8 @@
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              Temos um excelente espaço para alimentação e descanso, com a vitrine recheada de doces, salgados, cafés
+              Temos um excelente espaço para alimentação e descanso, com a vitrine recheada de doces,
+              salgados, cafés
               tradicionais e especiais para desfrutar seus melhores momentos.
             </div>
           </div>
@@ -216,7 +254,8 @@
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              Além de cafés o dia todo, oferecemos refeições em horário de almoço (11 às 15h) com pratos deliciosos de
+              Além de cafés o dia todo, oferecemos refeições em horário de almoço (11 às 15h) com pratos
+              deliciosos de
               bistrô!
             </div>
           </div>
@@ -230,7 +269,8 @@
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              Temos espaço adequado para trabalho, com conexão de internet de alta velocidade e instalações confortáveis
+              Temos espaço adequado para trabalho, com conexão de internet de alta velocidade e instalações
+              confortáveis
               para reuniões.
             </div>
           </div>
@@ -256,7 +296,8 @@
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              Organizamos buffet com cardápios variados e personalizados para casamentos, festas de aniversário e outros
+              Organizamos buffet com cardápios variados e personalizados para casamentos, festas de aniversário
+              e outros
               eventos!
             </div>
           </div>
@@ -295,7 +336,8 @@
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              Produzimos e entregamos os itens de café de nosso cardápio em grandes quantidades para seus eventos! Basta
+              Produzimos e entregamos os itens de café de nosso cardápio em grandes quantidades para seus
+              eventos! Basta
               entrar em contato e fazer a reserva com 72h de antecedência.
             </div>
           </div>
@@ -312,6 +354,169 @@
               Entregamos pelos aplicativos Ifood e Rappi. Consulte nosso cardápio por lá e faça seu pedido!
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 1-->
+  <div class="modal fade" id="modal-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="staticBackdropLabel">Cafés especiais</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/produtos-cafe-tradicional.png" class="w-100" alt="Xicara de café">
+          <p> O café Serenatto é conhecido por seus blends tradicionais e saborosos, que agradam aos amantes da
+            bebida.</p>
+          <p> Nossos grãos são cuidadosamente selecionados e torrados para produzir um aroma rico e sabor
+            equilibrado.Entre os cafés mais tradicionais da casa, destaca-se o "Café Serenatto", um blend
+            exclusivo de
+            grãos com notas de chocolate e caramelo. Outra opção popular é o "Café Italiano", um café expresso
+            encorpado
+            e intenso. Já o "Café Cappuccino" é uma escolha clássica para quem prefere uma bebida cremosa e
+            suave.
+          </p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2-->
+  <div class="modal fade" id="modal-2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="staticBackdropLabel">Cafés especiais</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/produtos-cafe-especial.png" class="w-100" alt="Xicara de café">
+          <p>Somos conhecidos também por nossos cafés especiais, que são cuidadosamente preparados com grãos
+            selecionados de alta qualidade e técnicas de preparo precisas. </p>
+          <p>Entre as opções de cafés especiais do Café & Bistrô Serenatto, destacamos o café aeropress, que é
+            preparado com uma técnica de imersão e pressão, resultando em uma bebida de sabor intenso e aroma
+            acentuado.
+            Outra opção popular é o café Hario V60, que é preparado com um filtro de papel em formato de cone e
+            resulta
+            em uma bebida limpa e suave, ressaltando as notas sensoriais dos grãos. Além disso, oferecemos uma
+            variedade de bebidas geladas, como o café gelado, que é preparado com grãos torrados escuros e
+            servido com gelo e
+            leite, resultando em uma bebida refrescante e saborosa.</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3-->
+  <div class="modal fade" id="modal-3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="staticBackdropLabel">Smoothies e Vitaminas</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/produtos-vitaminas.png" class="w-100" alt="Smoothies e Vitaminas">
+          <p>Deliciosos smoothies e vitaminas, uma explosão de sabor e nutrientes em cada gole! Nossa variedade
+            inclui
+            combinações refrescantes de frutas frescas, laticínios cremosos e superalimentos saudáveis.
+            Energize-se com
+            nosso menu repleto de opções nutritivas e refrescantes, perfeito para um estilo de vida saudável e
+            cheio de
+            vitalidade. Experimente agora!</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4-->
+  <div class="modal fade" id="modal-4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="staticBackdropLabel">Pães e Focaccias</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/produtos-paes.png" class="w-100" alt="Smoothies e Vitaminas">
+          <p>Experimente a nossa seleção irresistível de pães e focaccias artesanais! Nossas receitas exclusivas
+            combinam ingredientes de alta qualidade e técnicas tradicionais para criar produtos assados
+            deliciosamente
+            crocantes por fora e macios por dentro. Desde pães rústicos e multigrãos até focaccias de ervas
+            frescas e
+            azeite aromático, cada mordida é uma experiência única.</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5-->
+  <div class="modal fade" id="modal-5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="staticBackdropLabel">Doces</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/produtos-doces.png" class="w-100" alt="Doces">
+          <p>Deleite-se com nossas sobremesas irresistíveis! Nossos doces são feitos com amor e dedicação,
+            utilizando
+            ingredientes finos e técnicas tradicionais. Delicie-se com brownies ricos e fudgy, tortas de frutas
+            frescas
+            com crosta de manteiga, cheesecakes cremosos e uma variedade de bolos decadentes. Cada mordida é uma
+            explosão de sabores doces que irão satisfazer até os paladares mais exigentes. Aprecie o prazer dos
+            doces
+            feitos com perfeição!</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6-->
+  <div class="modal fade" id="modal-6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="staticBackdropLabel">Salgados</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/produtos-salgados.png" class="w-100" alt="Torta de Frango">
+          <p>Descubra a nossa incrível variedade de salgados deliciosos! De salgadinhos crocantes a deliciosas
+            empadas e
+            quiches, temos opções salgadas para todos os gostos. Nossos salgados são preparados com ingredientes
+            frescos
+            e de alta qualidade, combinando sabores e temperos para uma explosão de sabor. Experimente nossas
+            coxinhas
+            suculentas, pastéis recheados e outras delícias salgadas que vão satisfazer o seu paladar. </p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar</button>
         </div>
       </div>
     </div>
