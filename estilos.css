@@ -5,9 +5,25 @@ body {
   font-family: 'Barlow Condensed', sans-serif;
   height: 4000px;
 }
+[data-bs-theme="dark"] {
+  color: white;
+    .nav-link, 
+    .card-body, 
+    .offcanvas,
+    .accordion,
+    .btn {
+      --bs-nav-link-color: white;
+      --bs-card-color: white;
+      --bs-offcanvas-color: white;
+      --bs-body-color: white;
+  }
+}
 input[type=checkbox] {
   border: 2px solid var(--marrom-claro);
   box-shadow: none;
+}
+.input-range::-webkit-slider-thumb {
+  background-color: var(--marrom-claro);
 }
 
 input[type=checkbox]:checked,
