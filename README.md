@@ -1,4 +1,4 @@
 # Cefeteria
 
 Projeto feito utilizando bootstrap
-Link: https://eugeniobandeira.github.io/cafeteria/
+ - link: https://eugeniobandeira.github.io/cafeteria/
